@@ -98,7 +98,7 @@ async def doc(bot,update):
      else:
      		ph_path = None
      
-     value = 2090000000
+     value = 4294967296
      if value < file.file_size:
          await ms.edit("```Trying To Upload```")
          try:
@@ -200,7 +200,7 @@ async def vid(bot,update):
      		    ph_path = None
      		    print(e)
      
-     value = 2090000000
+     value = 4294967296
      if value < file.file_size:
          await ms.edit("```Trying To Upload```")
          try:
