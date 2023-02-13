@@ -42,8 +42,9 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("❤ Donation Link", url="https://upier.vercel.app/pay/tgnvs@axisbank") ], 
+	[InlineKeyboardButton("⭕ Main Channal ⭕", url="https://t.me/tgnvs"),
+	InlineKeyboardButton("🎬 𝙼𝚘𝚟𝚒𝚎 𝙲𝚑𝚊𝚗𝚗𝚊𝚕 🎬", url="https://t.me/nvsmovielink")]  ]))
 	    return
 	if id:
 	    if old == True:
@@ -55,15 +56,16 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("❤ Donation Link", url="https://upier.vercel.app/pay/tgnvs@axisbank") ], 
+	[InlineKeyboardButton("⭕ Main Channal ⭕", url="https://t.me/tgnvs"),
+	InlineKeyboardButton("🎬 𝙼𝚘𝚟𝚒𝚎 𝙲𝚑𝚊𝚗𝚗𝚊𝚕 🎬", url="https://t.me/nvsmovielink")]  ]))
 	        except:
 	             return
 	    else:
-	         await client.send_message(id,"Congrats! You Won 100MB Upload limit")
+	         await client.send_message(id,"🤩 Congrats! You Won 1GB Extra, added your Upload limit")
 	         _user_= find_one(int(id))
 	         limit = _user_["uploadlimit"]
-	         new_limit = limit + 104857600
+	         new_limit = limit + 1073741824
 	         uploadlimit(int(id),new_limit)
 	         await message.reply_text(text =f"""
 	Hello {wish} {message.from_user.first_name }
@@ -71,8 +73,9 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("❤ Donation Link", url="https://upier.vercel.app/pay/tgnvs@axisbank") ], 
+	[InlineKeyboardButton("⭕ Main Channal ⭕", url="https://t.me/tgnvs"),
+	InlineKeyboardButton("🎬 𝙼𝚘𝚟𝚒𝚎 𝙲𝚑𝚊𝚗𝚗𝚊𝚕 🎬", url="https://t.me/nvsmovielink")]  ]))
 	         
 
 
@@ -103,7 +106,7 @@ async def send_doc(client,message):
        	daily = user_deta["daily"]
        	user_type = user_deta["usertype"]
        except:
-           await message.reply_text("database has been Cleared click on /start")
+           await message.reply_text("Database has been Cleared click on /start again")
            return
            
            
@@ -126,7 +129,7 @@ async def send_doc(client,message):
        		file = media.document or media.video or media.audio 
        		dcid = FileId.decode(file.file_id).dc_id
        		filename = file.file_name
-       		value = 2147483648
+       		value = 4294967296
        		used_ = find_one(message.from_user.id)
        		used = used_["used_limit"]
        		limit = used_["uploadlimit"]
@@ -152,7 +155,7 @@ async def send_doc(client,message):
        		            total_rename(int(botid),prrename)
        		            total_size(int(botid),prsize,file.file_size)
        		        else:
-       		            uploadlimit(message.from_user.id,2147483648)
+       		            uploadlimit(message.from_user.id,4294967296)
        		            usertype(message.from_user.id,"Free")
 	
        		            await message.reply_text(f'Your Plane Expired On {buy_date}',quote=True)
@@ -164,7 +167,7 @@ async def send_doc(client,message):
        		    if buy_date:
        		        pre_check = check_expi(buy_date)
        		        if pre_check == False:
-       		            uploadlimit(message.from_user.id,2147483648)
+       		            uploadlimit(message.from_user.id,4294967296)
        		            usertype(message.from_user.id,"Free")
        		        
        		    filesize = humanize.naturalsize(file.file_size)
