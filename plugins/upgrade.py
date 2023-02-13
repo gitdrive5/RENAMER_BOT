@@ -10,11 +10,11 @@ async def upgrade(bot,update):
 	
 	**VIP 1 ** 
 	Daily  Upload  limit 50GB
-	Price Rs 50  🇮🇳 per Month
+	Price Rs 50 ₹  🇮🇳 per Month 📆
 	
 	**VIP 2 **
 	Daily Upload limit 200GB
-	Price Rs 100  🇮🇳 per Month
+	Price Rs 100 ₹ 🇮🇳 per Month 📆
 	
 	
 	Pay Using Upi I'd ```tgnvs@axisbank```
@@ -31,23 +31,23 @@ async def upgrade(bot,update):
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
 async def upgradecm(bot,message):
-	text = """**Free Plan User**
-	Daily  Upload limit 4GB
+	text = """**Free User Plan**
+	Daily 🔺 Upload limit 4GB
 	Price 0
 	
 	**VIP 1 ** 
-	Daily  Upload  limit 50GB
-	Price Rs 50  🇮🇳 per Month
+	Daily 🔺 Upload  limit 50GB
+	Price Rs 50  🇮🇳 per Month 📆
 	
 	**VIP 2 **
-	Daily Upload limit 200GB
-	Price Rs 100  🇮🇳 per Month
+	Daily 🔺 Upload limit 200GB
+	Price Rs 100  🇮🇳 per Month 📆
 	
 	
 	Pay Using Upi I'd ```tgnvs@axisbank```
 	
-	After Payment Send Screenshots Of 
-        Payment To Admin"""
+	After Payment Send 📲Screenshots Of 
+        Payment To Admin 🧛‍♀️"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/tgnvspaymentbot")], 
         			[InlineKeyboardButton("VIP 1",url = "https://upier.vercel.app/pay/tgnvs@axisbank?am=50"),
